@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AddLocationActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new Location"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/card_layout"
+             android:layout_marginTop="40dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginBottom="30dp"
+             android:orientation="vertical">
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Location title"
+                 android:textSize="16sp"
+                 android:textColor="@color/color_white"
+                 android:fontFamily="@font/poppinssemibold"
+                 android:layout_marginTop="30dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp" />
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/white_box_layout"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp">
+                 <EditText
+                     android:id="@+id/edt_title"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="Title"
+                     android:textSize="14sp"
+                     android:textColor="@color/colorPrimary"
+                     android:fontFamily="@font/poppinsregular"
+                     android:textCursorDrawable="@drawable/color_cursor"
+                     android:background="@null"
+                     android:padding="10dp"
+                     android:singleLine="true"
+                     android:lines="1"
+                     android:inputType="textCapWords"/>
+
+             </RelativeLayout>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Address"
+                 android:textSize="16sp"
+                 android:textColor="@color/color_white"
+                 android:fontFamily="@font/poppinssemibold"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp" />
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/white_box_layout"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp">
+                 <TextView
+                     android:id="@+id/txt_address"
+                     android:layout_width="match_parent"
+                     android:layout_height="100dp"
+                     android:hint="Enter your address"
+                     android:textSize="14sp"
+                     android:textColor="@color/colorPrimary"
+                     android:fontFamily="@font/poppinsregular"
+                     android:background="@null"
+                     android:textCursorDrawable="@drawable/color_cursor"
+                     android:gravity="start"
+                     android:layout_margin="5dp"
+                     android:inputType="textMultiLine"/>
+
+             </RelativeLayout>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Upload images"
+                 android:textSize="16sp"
+                 android:textColor="@color/color_white"
+                 android:fontFamily="@font/poppinssemibold"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp" />
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/white_box_layout"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp">
+                 <TextView
+                     android:id="@+id/txt_file"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:textSize="14sp"
+                     android:textColor="@color/colorPrimary"
+                     android:fontFamily="@font/poppinsregular"
+                     android:background="@null"
+                     android:textCursorDrawable="@drawable/color_cursor"
+                     android:padding="10dp"
+                     android:singleLine="true"
+                     android:lines="1"
+                     android:drawableRight="@drawable/ic_attach_file"/>
+
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <Button
+                     android:id="@+id/btn_submit"
+                     android:layout_width="150dp"
+                     android:layout_height="40dp"
+                     android:text="Submit"
+                     android:textSize="14sp"
+                     android:fontFamily="@font/poppinsmedium"
+                     android:textColor="@color/color_white"
+                     android:singleLine="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginBottom="20dp"
+                     android:background="@drawable/ripple_effect"/>
+
+             </RelativeLayout>
+
+
+         </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

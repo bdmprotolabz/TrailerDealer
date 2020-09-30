@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OtpverifyActivity"
+    tools:showIn="@layout/activity_otpverify">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the 4-digits code which is sent to your \nregistered mobile number"
+            android:textSize="15sp"
+            android:textColor="@color/color_white"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:itemBackground="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            app:itemCount="4"
+            app:lineColor="@android:color/darker_gray"
+            app:viewType="line" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/txt_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend code:"
+                android:textColor="@color/color_white"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="14sp"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/txt_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:layout_toRightOf="@+id/txt_resend"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verify code"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColorHint="@color/color_white"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ripple_effect"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

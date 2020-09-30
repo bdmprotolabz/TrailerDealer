@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/card_layout"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_product"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/default_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_product"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/productname"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:singleLine="true"
+                android:text="Product name "
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_busines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/security"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:singleLine="true"
+                android:text="our Business"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:singleLine="true"
+                android:text="our price"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:singleLine="true"
+                    android:text="View details"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#616060" />
+
+
+</LinearLayout>

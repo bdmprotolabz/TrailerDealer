@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text=" My account"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_layout">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="12dp">
+             <ImageView
+                 android:id="@+id/img_account"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@mipmap/account"
+                 android:layout_centerVertical="true" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Account"
+                 android:textColor="@color/color_white"
+                 android:fontFamily="@font/poppinsmedium"
+                 android:layout_toRightOf="@+id/img_account"
+                 android:layout_toLeftOf="@+id/txt_name"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"/>
+             <TextView
+                 android:id="@+id/txt_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Justin Giesel"
+                 android:textColor="@color/color_white"
+                 android:fontFamily="@font/poppinsmedium"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:singleLine="true"
+                 android:ellipsize="end"/>
+
+         </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/phone"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your number"
+                android:textColor="@color/color_white"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_toRightOf="@+id/img_phone"
+                android:layout_toLeftOf="@+id/txt_number"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/txt_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1-xxx-xxx"
+                android:textColor="@color/color_white"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"/>
+        <RelativeLayout
+            android:id="@+id/rl_signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/img_signout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/signout"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:textColor="@color/color_white"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_toRightOf="@+id/img_signout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text=" App support"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_layout">
+
+        <RelativeLayout
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/img_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/help"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="@color/color_white"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_toRightOf="@+id/img_help"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/img_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/appversion"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txt_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App version"
+                android:textColor="@color/color_white"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_toRightOf="@+id/img_version"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

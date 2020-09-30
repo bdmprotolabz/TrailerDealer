@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AddProductActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_box_layout">
+           <ImageView
+               android:id="@+id/img_product"
+               android:layout_width="120dp"
+               android:layout_height="100dp"
+               android:src="@mipmap/uploadicon"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="40dp"/>
+            <Button
+                android:id="@+id/btn_upload_image"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:hint="Upload image"
+                android:textColorHint="@color/color_white"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_product"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/uplodd_layout"/>
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/edt_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product name"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textCapWords"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_box_layout"/>
+        <EditText
+            android:id="@+id/edt_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textSize="15sp"
+            android:textColorHint="@color/color_light_gray"
+            android:textColor="@color/color_white"
+            android:inputType="textCapWords"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_box_layout"/>
+        <EditText
+            android:id="@+id/edt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:textSize="15sp"
+            android:textColorHint="@color/color_light_gray"
+            android:textColor="@color/color_white"
+            android:inputType="textCapWords"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:imeOptions="actionDone"
+            android:ellipsize="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_box_layout"/>
+       <Button
+           android:id="@+id/btn_upload"
+           android:layout_width="150dp"
+           android:layout_height="40dp"
+           android:hint="Upload"
+           android:textColorHint="@color/color_white"
+           android:textSize="15sp"
+           android:fontFamily="@font/poppinsregular"
+           android:layout_marginTop="30dp"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/ripple_effect"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
